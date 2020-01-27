@@ -1,0 +1,37 @@
+<!--
+    Form Tag Name 	Purpose
+<form> </form> 	    Marks the beginning and end of the form.
+<input /> 	        Represents some type of input element based on its type attribute. Valid type attribute                       values include: text, radio, submit, password, checkbox, button, and more.
+        
+                    <input type="type of input" name="name of input" >
+                    Types: text, radio, submit, reset, password, checkbox
+
+<select> </select> 	Marks the beginning and end of a drop-down list.
+<option> </option> 	Marks the beginning and end of an option in the drop-down list.
+<textarea> </textarea> 	Marks the beginning and end of a multi-line text input box.
+-->
+        <!-- Radio Buttons-->
+<form action="fakePage.html" method="POST">
+    Text Input: <input type="text" name="myTextInput" required/><br />
+    Radio Buttons:<br />
+    <input type="radio" name="answer" value="YES" checked />Yes<br />
+    <input type="radio" name="answer" value="NO" />No<br />
+    <input type="radio" name="answer" value="MAYBE" />Maybe<br />
+    <!-- Password Input: ... -->
+    Password Input: <input type="password" name="userPassword" /><br />
+    <!-- Check Boxes -->
+    <input type="checkbox" name="myChoices" value="Soup" checked/>Soup<br />
+    <input type="checkbox" name="myChoices" value="Salad" checked/>Salad<br />
+    <input type="checkbox" name="myChoices" value="Fries" checked/>Fries<br />
+    <input type="checkbox" name="myChoices" value="Dessert" checked/>Dessert<br />
+    <!-- Drop down selections -->
+    <select name="phones">
+        <option value="iPhone6">Mac OS</option>
+        <option value="GalaxyS6">Windows</option>
+        <option value="Nexus5">Linux</option>
+    </select></br>
+<!-- Textarea tag is used to create a multi-line, resizable text box. -->
+    <textarea name="briefDescription"></textarea><br />
+    <!--Submit Button                       Reset Button-->
+    <input type="submit"/><br /><input type="reset" /><br />
+</form>
