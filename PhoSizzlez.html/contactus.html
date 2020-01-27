@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Dillon Kiley
+    Date Created: 1/27/20
+    Most recent revision: 1/27/20
+-->
+<html>
+    <p>Contact Us</p>
+    <hr />
+    <head>
+        <title>Pho Sizzlez</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Pho Sizzlez</h1>
+            </header>
+            <nav>
+                <hr />
+                <a href="Rindex.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contactus.html">Contact Us</a>
+                <hr />
+            </nav>
+            <form action="submit.html"method="POST">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name"> <br />
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"> <br />
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone"> <br />
+                
+                <label for="contact">Reason for Inquiry:</label>
+                <select id="contact" name="contact">
+                <option value="default" selected>--Select One--</option>
+                <option value="Catering">Catering</option>
+                <option value="PrivatePart">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+                </select><br />
+                <label for="info">Additional Information</label>
+                <textarea id="info" name="info"></textarea><br />
+
+                <legend>Have you been to the restaurant?</legend>
+                    <input type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label for="choice1">Yes</label><br />
+                    <input type="radio" id="choice2" name="questionnaire" value="no">
+                    <label for="choice2">No</label><br />
+
+
+
+
+                
+                    <legend>Best days to contact you?</legend>
+                    <input type="checkbox" id="M" name="interest" value="M">
+                    <label for="M">M</label>
+
+                    <input type="checkbox" id="T" name="interest" value="T">
+                    <label for="T">T</label>
+
+                    <input type="checkbox" id="W" name="interest" value="W">
+                    <label for="W">W</label>
+
+                    <input type="checkbox" id="Th" name="interest" value="Th">
+                    <label for="Th">Th</label>
+
+                    <input type="checkbox" id="F" name="interest" value="F">
+                    <label for="F">F</label><br />
+
+                    <input type="submit" name="submit" value="Send Request">  
+            </form>
+        </main>
+    </body> 
+    <footer>
+        <hr />
+        <p>Street, City, State, Zipcode<br /> Phone</p>
+    </footer>
+</html>
