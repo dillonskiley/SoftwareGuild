@@ -1,0 +1,113 @@
+<!-- We have seen how to select items by the HTML element and how to select an individual item by an id attribute. Another way to group HTML elements for CSS rules is by their class attribute. In this example, we have a group of paragraph tags that are displaying text related to validation errors. We want a rule that will apply only to the warning messages, but not to other p elements on the page.-->
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+
+        </style>
+    </head> 
+    
+    <body>
+        <div class="warning">
+            <p>The following errors occurred:</p> 
+        </div> 
+        <p class="warning">First Name is required.</p> 
+        <label for="firstName">First Name</label> 
+        <input type="textbox" name="firstName"/> 
+        <p class="warning">Last Name is required.</p> 
+        <label for="lastName">Last Name</label> 
+        <input type="textbox" name="lastName"/>   
+    </body> 
+</html>
+
+<!-- We do not need these warnings to show, so we can hide them with CSS. When we want to target a class, the selector starts with a dot (.), like .warning. Because the class applies to both div and p elements, we can use a single rule to target all of them. -->
+
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+            .warning { 
+                /* When we do want them to appear, we want them to stand out: bold and red. We can also achieve this style in CSS. */
+                font-weight: bold;
+                color: red; 
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <div class="warning">
+            <p>The following errors occurred:</p> 
+        </div> 
+        <p class="warning">First Name is required.</p> 
+        <label for="firstName">First Name</label> 
+        <input type="textbox" name="firstName"/> 
+        <p class="warning">Last Name is required.</p> 
+        <label for="lastName">Last Name</label> 
+        <input type="textbox" name="lastName"/>   
+    </body> 
+</html>
+
+<!-- Apply a Rule to More Than One Selector -->
+<html> 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+            /* Here we apply rules to 2 selectors */
+            #product1, #product3 { 
+                color: blue; 
+            }
+            #product2 { 
+                border: 3px red dashed; 
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <div id="product1"> 
+            <h2>Awesome Product</h2> 
+            <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini strozzapreti garganelli fettucelle. </p> 
+        </div> 
+        <div id="product2"> 
+            <h2>More Awesome Product</h2> 
+            <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini strozzapreti garganelli fettucelle. </p> 
+        </div> 
+        <div id="product3"> 
+            <h2>Most Awesome Product</h2> 
+            <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini strozzapreti garganelli fettucelle. </p> 
+        </div>    
+    </body> 
+</html>
+
+<!-- To style only the opening error message text to be italicized. We can use a combination of the element and class selectors to narrow down our selection to this particular element, by telling the browser that we want to format only divs with the class value warning.-->
+<!-- 
+    div.warning {
+    font-style: italic;
+    }               -->
+<html> 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+            .warning { 
+                font-weight: bold; 
+                color: red;
+            }
+            div.warning { 
+                font-style: italic; 
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <div class="warning">
+            <p>The following errors occurred:</p> 
+        </div> 
+        <p class="warning">First Name is required.</p> 
+        <label for="firstName">First Name</label> 
+        <input type="textbox" name="firstName"/> 
+        <p class="warning">Last Name is required.</p> 
+        <label for="lastName">Last Name</label> 
+        <input type="textbox" name="lastName"/>   
+    </body> 
+</html>

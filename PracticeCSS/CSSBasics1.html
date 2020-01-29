@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Cascading Style Sheets (CSS)-->
+<html>
+    <!-- CSS Rule Set
+        A block of text that defines the style of an HTML element or a group of HTML elements -->
+    selector {
+        attribute1: value;
+        attribute2: value;
+        ...
+    }
+
+    <!-- CSS Rule Set Ex. -->
+    .warning {
+        font-weight: bold;
+        color: red;
+    }
+
+    <!-- CSS Selector 
+        The part of the rule that states which element(s) are going to be styled. For the sample rule, the selector is: .warning -->
+
+    <!-- CSS Declaration 
+        A CSS declaration is a styling definition that includes the property and the value. -->
+    color: red;
+
+    <!-- CSS Property 
+        A CSS property – or CSS attribute – is the part of the HTML element that is being styled. In the example rule, the CSS property is color -->
+
+    <!-- CSS Value 
+        The property that the declaration applies to the selected content. In the example rule, the CSS value is red.
+    -->
+    <!-- 
+    /* CSS Comment */
+    -->
+
+    <!-- Applying CSS to Multiple Elements on a Page
+        If we want all paragraphs to use the same color font, we can add the style to the head element of the page. -->
+    <!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+            /* The "P" means it only effects the paragraph */
+            p {
+                color:darkviolet;
+            }
+            /* The "li" means it only effects the list */
+            li { 
+                border-bottom: 1px dashed red; 
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <p>This is a paragraph.</p>
+        <p>This is a second paragraph.</p>
+        <ul>
+            <li>Sam</li> 
+            <li>John</li> 
+            <li>Chris</li> 
+        </ul>
+    </body> 
+</html>
+
+
+    <!-- We tweak the purple color to apply to body instead of to p, all text will be purple. -->
+ 
+    <head> 
+        <title>CSS Examples</title>	
+        <style>
+            body {
+                color:darkviolet;
+            }
+            li { 
+                border-bottom: 1px dashed black; 
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <ul>
+            <li>Sam</li> 
+            <li>John</li> 
+            <li>Chris</li> 
+        </ul>
+    </body>
+
+    
+
+
+
+</html>
