@@ -1,0 +1,86 @@
+<!-- 
+    The term "style sheet" simply refers to a set of CSS style rules, not necessarily to a separate file
+
+    Inline styles: Added to the style attribute of an HTML element.
+    Internal style sheet: A set of rules added to the <head> element of an HTML page.
+    External style sheet: A set of rules created as a separate .css file and applied using a style link attribute in the HTML page.
+-->
+
+<!-- 
+    Inline Styles
+    They are considered inline because the styles are written in line with the HTML
+
+    Ex. of an inline style:
+-->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <title>Style Sheets</title>
+        <style>
+        </style>
+    </head> 
+    
+    <body>
+        <p style="color:red;font-weight:bold;">These fields are required. </p>
+    </body> 
+</html>
+
+<!--
+    Internal Style Sheets
+    Internal style sheets are CSS rules that are grouped together inside the HTML style tags in the <head> of an HTML document. These styles automatically apply to all relevant content on the page, making it easier to ensure that all elements with specific attributes are formatted the same throughout the page.
+-->
+<style>
+    /* text-decoration: none; removes the default underlining from the hypertext. */
+    a {
+      text-decoration: none;
+    }
+    /* a: hover tells the browser to apply the style – in this case, to underline the text – when the user's mouse hovers over the hypertext. */
+    a:hover {
+      text-decoration: underline;
+    }
+    /* This document contains multiple elements with the CSS class warning. For all of these elements on the page, the text will display in red bold.*/
+    .warning {
+      font-weight: bold;
+      color: red;
+    }
+    /* For text appearing in the div with the class of warning (with the selector div .warning, where a space indicates that .warning is nested inside a div), the text will display in red italics. */
+    div .warning {
+      font-style: italic;
+    }
+  </style>
+
+    <!-- 
+    External Style Sheets
+    External style sheets allow you to share styles across multiple pages, allowing you to create a consistent look and feel throughout your website
+
+    There are two ways to connect to an external style sheet: through the link HTML element or through the CSS @import command.
+-->
+    <!-- WAY 1: In an HTML document, you could link to an external style sheet like this:
+    -->
+<!-- 
+    The rel attribute is set to stylesheet, which identifies that we are linking to a style sheet file.
+    The type attribute is set to text/css; this identifies that we are linking to a file that contains CSS.
+    The href attribute tells the browser where to find the external .css file; in this example, the file is named sampleStyles.css and it is in the same directory as the current HTML file.
+ -->
+ <link rel="stylesheet" 
+      type="text/css"
+      href="sampleStyles.css" />
+    
+    <!-- WAY 2: You can also link to an external style sheet that is already published to the Web, using @import.
+
+    @import url("http://mysite.com/styles/sharedStyles.css");
+    -->
+
+    <!-- 
+        WHEN TO USE WHICH KIND OF STYLE SHEET 
+        
+        While it is nice to have multiple places for storing these styles, it is imperative to understand when to use one over another.
+
+        An inline style applies to one specific object. If there is a particular object that needs to be styled precisely, an inline style may be the way to go.
+        
+        An internal style sheet applies to one specific page. If there is a style that applies to multiple elements on a page, an internal style sheet may be easier to manage than dealing with copied-and-pasted styles in inline styles for each element.
+        
+        An external style sheet applies to any page that references it. If there is a consistent look and feel that applies to multiple pages, an external style sheet may be the way to go.
+
+    -->
