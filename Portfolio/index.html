@@ -7,6 +7,21 @@
 <html lang="en">
     <head>
         <title>Dillon's Profolio</title>
+        <style>
+            body {
+                background-color: lightpink;
+            }
+            header, footer {
+                background-color: indianred;
+                color: white;
+            }
+            .border {
+                border: thick solid blue;
+            }
+            #expirences {
+                border: thick dashed orange;
+            }
+        </style>
     </head>
 
     <body>
@@ -15,16 +30,16 @@
                 <h1>Portfolio for Dillon Kiley</h1>
             </header>
 
-            <nav>
-                <hr /> 
+            <nav class="border">
+                <hr style="width: 80%; border: 3px  dotted blueviolet;" /> 
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
-                <hr />
+                <hr style="width: 80%; border: 3px solid blueviolet;" />
             </nav>
 
             <section> <!-- The section element contains the three chunks we are using to sell ourselves in this page. -->
-                <article id="about"> <!-- This is the first chunk inside the section element. -->
+                <article class="border" id="about"> <!-- This is the first chunk inside the section element. -->
                       <h2><em>About Me</em></h2>
                       <img src="images/WebsitePorfolioPic.jpg" alt="Portrait of Dillon Kiley" />
                       <p>Hello, my name is <strong>Dillon Kiley</strong>. I was born in 1998 in <strong>Tobolsk, Russia</strong>. I was adopted at the age of 1 to an American family in <strong>Denver, Colorado.</strong></p>
@@ -32,7 +47,7 @@
                 </article>
 
                 <article>
-                    <article id="Expirences"> 
+                    <article id="expirences"> 
                         <h2><em>Past Expirences</em></h2>
                         <img src="images/SoccerBallPic.jpg" alt=""/>
                         <table>
