@@ -1,0 +1,174 @@
+
+    <!-- Final Check is at bottom -->
+    <!--
+    <thead> </thead> – used for grouping table header content
+    <tbody> </tbody> – used for grouping table body content
+    <tfoot> </tfoot> – used for grouping table footer content
+        -->
+    <table border="1">
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+              <th>Heading 1</th>
+              <th>Heading 2</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lorem</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ipsum</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>dolor</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Lorem</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <td colspan="2">Table Footer Text</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Borders
+        The CSS border, border-top, border-left, border-right, and border-bottom shorthand properties give us more flexibility, in that they include:
+
+        Thickness (border-width) – typically in medium/thin/thick or a fixed width
+        Color (border-color) – in any CSS-accepted color format
+        Style (border-style) – solid, double, dashed, dotted, groove, ridge, inset, outset, hidden, and none
+
+    -->
+    <!-- 
+        Let's start with the CSS equivalent of border="1". The style rule looks like this:
+        table, th, td {
+            border: 1px solid black;
+        }
+    -->
+
+    <!-- Padding and Spacing
+
+        Our requirements state:
+
+    There should be 10 pixels of padding on the left of each cell.
+    There should be 5 pixels of padding on the top and bottom of each cell.
+    There should be no padding on the right of each cell.
+
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+    Could also be writen:
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 0px 5px 10px;
+}    
+    -->
+
+<!-- Widths and Heights
+    table {
+  width: 100%;
+}
+
+th {
+  height: 25px;
+}
+
+-->
+
+<!-- 
+    Text Alignment
+
+tfoot td {
+    text-align: center;
+}
+-->
+
+<!-- Styling Table Row Backgrounds
+
+    tbody tr:nth-child(even) {
+  background-color: lemonchiffon;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lawngreen;
+}
+-->
+
+<!-- FINAL CHECK -->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <title>Links and Tables</title>	
+        <style>
+            table, th, td { 
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px 0px 5px 10px;
+            }
+            table { 
+                width: 100%; 
+            } 
+            th { 
+                height: 25px; 
+            }
+            tfoot td { 
+                text-align: center; 
+            }
+            tbody tr:nth-child(even) { 
+                background-color: lemonchiffon; 
+            } 
+            tbody tr:nth-child(odd) { 
+                background-color: lawngreen; 
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <table> 
+            <caption>Table Caption</caption> 
+            <thead> 
+                <tr> 
+                    <th>Heading 1</th> 
+                    <th>Heading 2</th> 
+                </tr> 
+            </thead> 
+            
+            <tbody> 
+                <tr> 
+                    <td>1</td> 
+                    <td>Lorem</td> 
+                </tr> 
+                <tr> 
+                    <td>2</td> 
+                    <td>ipsum</td> 
+                </tr> 
+                <tr> 
+                    <td>3</td> 
+                    <td>dolor</td> 
+                </tr> 
+                <tr> 
+                    <td>4</td> 
+                    <td>Lorem</td> 
+                </tr> 
+            </tbody> 
+            <tfoot> 
+                <tr> 
+                    <td colspan="2">Table Footer Text</td> 
+                </tr> 
+            </tfoot> 
+        </table>
+    </body> 
+</html>

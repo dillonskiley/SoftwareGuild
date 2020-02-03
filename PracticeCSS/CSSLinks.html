@@ -1,0 +1,45 @@
+<!-- selector:pseudo-class {
+ /* CSS declarations */
+}
+-->
+
+<!--
+    In order to style them effectively, the link's pseudo-classes should be styled in this order:
+
+    link – unvisited link
+    visited – visited link (meaning that you have recently opened the target page in your browser)
+    hover – mouse over the link
+    active – selected link
+
+    In this example, our requirements are:
+    Unvisited links are green.
+    Visited links are red.
+    All links are underlined, except when hovering over a link.
+    All links are in a monospace font, except when hovering over a link. When hovering over the link, the text is in cursive.
+    We want to make sure it is clear which link we are selecting. Active (selected) links are bold.
+
+    a {
+  font-family: monospace;
+  text-decoration: underline;
+  font-weight: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00c;
+  font-family: cursive;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+-->
