@@ -4,10 +4,10 @@
     Date Created: 1/22/20
     Most recent revision: 1/22/20
 -->
-<html lang="en">
-    <head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>Dillon's Profolio</title>
-        <link href="styles/Main.css" rel="stylesheet" type="text/css" />
+        <link href="Dillon's%20Profolio_files/Main.css" rel="stylesheet" type="text/css">
         <style>
             caption {
             font-weight: bold;
@@ -39,23 +39,12 @@
             background-color: #e4c3ad; 
         }   
         
-        .clear-float {
-            clear:both;
-        }
-
-        article img {
-            float:left;
-        }
-        .right-content {
-            float:left;
-        }
-        
     </style>
 
 </head>
             
-        </style>
-    </head>
+        
+    
 
     <body>
         <main>
@@ -64,26 +53,27 @@
             </header>
 
             <nav class="border">
-                <p><a href="projects.html">Projects</a></p>
-                <p><a href="contact.html">Contact Me</a></p>
-                <p><a href="testimonials.html">Testimonials</a></p>
+                <p><a href="http://127.0.0.1:5500/SoftwareGuild/Portfolio/projects.html">Projects</a></p>
+                <p><a href="http://127.0.0.1:5500/SoftwareGuild/Portfolio/contact.html">Contact Me</a></p>
+                <p><a href="http://127.0.0.1:5500/SoftwareGuild/Portfolio/testimonials.html">Testimonials</a></p>
                 
             </nav>
 
             <section> <!-- The section element contains the three chunks we are using to sell ourselves in this page. -->
                 <article class="border" id="about"> <!-- This is the first chunk inside the section element. -->
                       <h2><em>About Me</em></h2>
-                      <img src="images/WebsitePorfolioPic.jpg" alt="Portrait of Dillon Kiley" width="250" style="float:left;" />
+                      <img src="Dillon's%20Profolio_files/WebsitePorfolioPic.jpg" alt="Portrait of Dillon Kiley">
                       <p>Hello, my name is <strong>Dillon Kiley</strong>. I was born in 1998 in <strong>Tobolsk, Russia</strong>. I was adopted at the age of 1 to an American family in <strong>Denver, Colorado.</strong></p>
-                      <p>I've lived in Denver ever since I came here in 1999. Then two years later my parents adopted another kid from Russia and named him Dane. Then 2 years after Dane's adoption, my parents adopted a little girl from China and named her Isabel.</p>
-                      <div class="clear-float"></div>
+                      <p>I've lived in Denver ever since I came here in 
+1999. Then two years later my parents adopted another kid from Russia 
+and named him Dane. Then 2 years after Dane's adoption, my parents 
+adopted a little girl from China and named her Isabel.</p>
                 </article>
 
                 <article>
                     <article id="expirences"> 
                         <h2><em>Past Expirences</em></h2>
-                        <img src="images/SoccerBallPic.jpg" alt=""/>
-                        <div class="right-content">
+                        <img src="Dillon's%20Profolio_files/SoccerBallPic.jpg" alt="">
                         <table>
                             <caption> Employment History </caption>
                             <thead>
@@ -110,16 +100,13 @@
                                     <td>State University</td>
                                 </tr>
                             </tbody>
-                        </div>
-                        <div class="clear-float"></div>
                         </table>
-                        
                 </article>
 
                 <article>
                     <article id="hobbies">
                         <h2><em>Hobbies</em></h2>
-                        <img src="images/RasperriPiPic.jpg" alt=""/>
+                        <img src="Dillon's%20Profolio_files/RasperriPiPic.jpg" alt="">
                         <ul>
                             <li>Watching Soccer</li>
                             <ol>
@@ -153,12 +140,50 @@
                             </ul>
                         </ul>
                 </article>
-            </section>   
+            </article></article></section>   
             
             <footer>
-                <hr />
-                <p>&copy; 2020 Dillon Kiley. All rights reserved.</p>
+                <hr>
+                <p>© 2020 Dillon Kiley. All rights reserved.</p>
             </footer>
         </main>
-    </body>
-</html>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
