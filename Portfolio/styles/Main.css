@@ -28,3 +28,29 @@ header, footer {
     text-align: center;
     padding: 30px 10px 20px 10px;
 }
+
+nav a {
+    background-color: #18121E;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+nav a:hover {
+    background-color: #4a0957;
+    color: #5b7d87; 
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #f2eded; 
+}

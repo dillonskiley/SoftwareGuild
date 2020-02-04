@@ -44,13 +44,19 @@
         }
 
         article img {
-        float:left;
+            float:left;
         }
 
         article {
             margin-bottom: 16px;
         }
+
+        .right-content {
+            float:left;
+        }
         
+        
+
     </style>
 
 </head>
@@ -63,11 +69,12 @@
             <header>
                 <h1>Portfolio for Dillon Kiley</h1>
             </header>
-
+            
             <nav class="border">
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
+                <div class="clear-float"></div>
                 
             </nav>
 
@@ -77,14 +84,14 @@
                       <img src="images/WebsitePorfolioPic.jpg" alt="Portrait of Dillon Kiley" width="250" style="float:left;" />
                       <p>Hello, my name is <strong>Dillon Kiley</strong>. I was born in 1998 in <strong>Tobolsk, Russia</strong>. I was adopted at the age of 1 to an American family in <strong>Denver, Colorado.</strong></p>
                       <p>I've lived in Denver ever since I came here in 1999. Then two years later my parents adopted another kid from Russia and named him Dane. Then 2 years after Dane's adoption, my parents adopted a little girl from China and named her Isabel.</p>
-                      <div class="clear-float"></div>
+                    <div class="clear-float"></div>  
                 </article>
 
 
                 <article>
                     <article id="expirences"> 
                         <h2><em>Past Expirences</em></h2>
-                        <img src="images/SoccerBallPic.jpg" alt="" width="250" />
+                        <img src="images/SoccerBallPic.jpg" alt="" width="250" style="float:left;" /> 
                         <div class="right-content">
                         <table>
                             <caption> Employment History </caption>
@@ -114,50 +121,43 @@
                             </tbody>
                         </table>
                         </div>
-                        <div class="clear-float"></div>
+                        <div class="clear-float"></div>    
                 </article>
 
-                <article>
-                    <article id="hobbies">
-                        <h2><em>Hobbies</em></h2>
-                        <img src="images/RasperriPiPic.jpg" alt="" width="250" style="float:left;"/>
-
+                <article id="hobbies"> <!-- This is the third chunk inside the section element. -->
+                    <h2><em>Hobbies</em></h2>
+                    <img src="images/RasperriPiPic.jpg" alt="" width="250" />
+                    <div class="right-content">
+                    <ul>
+                        <li>Books</li>
+                        <ol>
+                            <li>Rich Dad Poor Dad</li>
+                            <li>How To Win Friends & Influence People</li>
+                            <li>Think Rich Grow Rich</li>
+                        </ol>
+                        <li>Podcast</li>
+                        <ol>
+                            <li>Bigger Pockets</li>
+                            <li>Entreprneur On Fire</li>
+                            <li>Joe Rogan</li>
+                        </ol>
+                        <li>Sports</li>
                         <ul>
-                            <li>Watching Soccer</li>
-                            <ol>
-                                <li>Real Madrid</li>
-                                <li>Barcelona</li>
-                                <li>Liverpool</li>
-                            </ol>
+                            <li>Soccer</li>
+                            <li>Spike Ball</li>
+                            <li>Basketball</li>
                         </ul>
+                        <li>Outdoor Activities</li>
                         <ul>
-                            <li>Sports</li>
-                            <ol>
-                                <li>Soccer</li>
-                                <li>Tennis</li>
-                                <li>Spike Ball</li>
-                            </ol>
+                            <li>Hiking</li>
+                            <li>Off Roading</li>
+                            <li>Snowboarding</li>
                         </ul>
-                        <ul>
-                            <li>Sports</li>
-                            <ul>
-                                <li>Soccer</li>
-                                <li>Spike Ball</li>
-                                <li>Tennis</li>
-                            </ul>
-                        </ul>
-                        <ul>
-                            <li>Favorite Books</li>
-                            <ul>
-                                <li>Rich Dad Poor Dad</li>
-                                <li> ...</li>
-                                <li> ...</li>
-                            </ul>
-                        </ul>
-                        <div class="clear-float"></div>
+                    </ul>
+                    </div>
                 </article>
+                <div class="clear-float"></div>
             </section>   
-            
             <footer>
                 <hr />
                 <p>&copy; 2020 Dillon Kiley. All rights reserved.</p>
