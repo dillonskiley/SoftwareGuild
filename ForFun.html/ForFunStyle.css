@@ -1,0 +1,8 @@
+h2 {
+    color: rgb(223, 43, 169);
+}
+
+header, footer {
+    background-color: brown;
+    border-bottom: 10px dashed red; 
+}
