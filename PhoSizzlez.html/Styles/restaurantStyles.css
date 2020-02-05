@@ -1,4 +1,25 @@
 header, footer {
     background-color: brown;
     border-bottom: 10px dashed red; 
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    
 }
+/*
+nav {
+    text-decoration: solid;
+}
+*/
+nav a:visited {
+    color: pink;
+}
+
+nav a:hover {
+    color: #000000; 
+    font-weight: bold;
+}
+
+
+
+
