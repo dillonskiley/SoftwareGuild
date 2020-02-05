@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Bootstrap Sample Page</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        	
+	</head>
+	<body>
+        <div class="container-fluid"></div>
+            <!-- All visible content of the page will be inside this div. -->
+            <div class="row">
+                <div class="col-lg-3 col-md">
+                    <img src="images/bootstraptest.jpg" class="img-fluid" />
+                </div>
+            
+                    <div class="col-lg-9 col-md">
+                    <p>Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.</p>
+                    <p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh pellentesque rutrum. Nunc vel mauris diam.</p>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        
+        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
+
+<!-- Bootstrap Grid Sample 
+    https://content.learninghouse.com/clients/tsg/courses/itwd2-1/resourceFiles/CSS-Example-Files/bootstrap-gridsample.html
+-->
+
+<!-- Responsive Design with Bootstrap’s Grid System 
+        Bootstrap’s grid system allows you to lay out your page in a grid that is 12 columns across. It is put together using flexbox (Links to an external site.) which helps automatically size some of our components. Here are some things to note:
+
+        As mentioned above, your content needs to be enclosed in a div with either a container  (fixed-width) or container-fluid (full-width) class.
+        There are CSS classes for the rows and columns of the grid:
+        row is used to group content into a row.
+        col classes are there for grouping content across multiple columns. You can specify exactly how many columns the HTML element should span using a notation like col-4, which tells Bootstrap that the content should span four grid columns.
+        sm, md, and lg refer to the devices that they are targeting. If a smaller device style is applied and a larger device style is not present, the smaller device style will apply to the element regardless of the viewing device.
+        In previous versions, xs referenced extra small screens. This has been replaced in Bootstrap 4 with just col by itself with no size indicator appended.
+        As of Bootstrap 4, If you don't specify a column width for a column (col vs col-12) it will automatically resize the columns in a single row to fit into the 12 grid columns evenly.  For example, three col columns in a row will automatically resize to be the equivalent of col-4. Similarly, two col columns in a row will automatically resize to be the equivalent of col-6 each.
+-->
+
+<!-- Looking at CSS Media Queries 
+
+    Behind the grid system are CSS media queries. These are ways in CSS to apply styles based on certain conditions, including:
+
+    Width and height of the viewport and device
+    Orientation – landscape or portrait mode
+    Types – including screen, speech (for screen readers), print (for styling output for a printer), and all
+
+    Media queries are noted by @media and follow the following format:
+-->
+<!--
+@media type and (property:value) {
+    selector {
+    property:value;
+    property:value;
+    }
+    selector2{
+    property:value;
+    property:value;
+    }
+   }
+-->
+
+<!-- Example Media Queries in Bootstrap
+    Media Query 	                        Meaning
+@media print 	                        For output sent to a printer
+
+@media (min-width: 768px) 	            For a viewport at least 768px wide
+
+@media screen and (max-width: 767px) 	For viewing with a screen and the max viewing width is 767px
+
+@media (max-device-width: 480px) 	    For devices that have a max device width of 480px and are displaying and (orientation: landscape)               site in landscape mode
+
+@media all and (transform-3d),       	For all types that support CSS3’s 3D transformations
+(-webkit-transform-3d)
+
+These queries essentially query the browser to determine the window size and browser settings, then apply the relevant CSS styles based on that information.
+-->
+
+<!-- Global Settings
+
+    In addition to including the required css and js files from the previous code-along, we need to create a container that will apply to the entire page. Bootstrap has two classes for this purpose:
+
+    .container: This creates a fixed-width container whose grid columns have a fixed width, regardless of the size of the window. The contents will still respond to smaller window sizes, but the grid cells will stack rather than get narrower.
+    .container-fluid: This creates a more fluid layout, where the grid columns may get relatively narrow before they start stacking.
+-->
+
+<!-- Applying the Grid: Full Screen
+    
+
+
+-->
