@@ -6,16 +6,18 @@ header, footer {
     font-size: 20px;
     
 }
-/*
+
 nav {
-    text-decoration: solid;
+    text-decoration: none;
 }
-*/
+
 nav a:visited {
     color: pink;
+    text-decoration: none;
 }
 
 nav a:hover {
+    text-decoration: none;
     color: #000000; 
     font-weight: bold;
 }
