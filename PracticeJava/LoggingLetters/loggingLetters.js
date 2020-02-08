@@ -1,11 +1,7 @@
-var sentence = "I love learning software development";
+console.log("Hello World")
  
-for (var i=0; i < sentence.length; i++) {
-     if(sentence[i] !== " "){
-      console.log(sentence[i]);
-     }
-}
-console.log("hello")
+
+
 
 /*
 In the for loop, we use the .length property in the loop's condition. Every string in JavaScript has a .length property, which refers to the number of characters (including spaces) in the string. Here we compare the number of characters in our sentence string (the string's length) to the current value of i. This assures that the loop will only execute as many times as there are characters in our sentence string, preventing an infinite loop.
