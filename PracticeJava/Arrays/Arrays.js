@@ -177,5 +177,3 @@ Suppose we have to have dragonfruit at the position of index 5.
 */
 fruits[5] = "dragonfruit"; // mango, gooseberry, pineapple, undefined, dragonfruit
 
-
-
