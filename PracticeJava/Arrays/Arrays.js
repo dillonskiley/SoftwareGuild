@@ -35,6 +35,7 @@ var team2 = new Array();
 /*
 Now let's assign teams. We can loop through our friends array with a for loop. Because index values start at 0, we want our loop counter (i) to start at 0. We want the loop to run as long as the loop counter is less than the length of the array. Our logic looks like this:
  */
+/*
 for (var i = 0; i < friends.length; i++) {
     if (i % 2 == 0) {
         // if the index is even, add the person to team 1
@@ -42,7 +43,8 @@ for (var i = 0; i < friends.length; i++) {
     } else {
         // otherwise add them to team 2
 
-    }
+}
+*/
 
     /* 
 Working with Arrays as stacks
@@ -176,4 +178,3 @@ fruits[2] = "pineapple"; // mango, gooseberry, pineapple
 Suppose we have to have dragonfruit at the position of index 5.
 */
 fruits[5] = "dragonfruit"; // mango, gooseberry, pineapple, undefined, dragonfruit
-
