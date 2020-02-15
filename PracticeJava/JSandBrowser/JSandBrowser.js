@@ -58,8 +58,7 @@ The onload Event
 
     Here is a sample of the onload event. Notice that onload appears as an attribute of the <body> tag. Also notice that it is calling JavaScript's alert() function:
 */
-
-<!DOCTYPE html>
+/*
  
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -78,8 +77,7 @@ The onload Event
     We can create our own JavaScript function and call it as part of the onload event. Here is a sample of the onload event calling a function we created:
 */
 
-<!DOCTYPE html>
- 
+ /*
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Simple onload Example with Function</title>
@@ -99,4 +97,28 @@ The onload Event
 
 /*
 The onclick Event
+
+        Here is an example of taking input from the user and then showing a <div> with a greeting:
+*/
+ /*
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simple onclick Example with Function</title>
+    <script type="text/javascript">
+        function greetTheUser() {
+            document.getElementById("userName").innerText = document.getElementById("inputName").value;
+            document.getElementById("greeting").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Enter your name: <input type="text" id="inputName" placeholder="What's your name?" />
+        <button onclick="greetTheUser();">Show Greeting</button>
+    </div>
+    <div id="greeting" style="display:none;">
+        <h1>Hi, <span id="userName"></span>!</h1>
+    </div>
+</body>
+</html>
 */
