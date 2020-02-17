@@ -7,8 +7,13 @@ header, footer {
     
 }
 
+html {
+    background-color: black;
+}
 nav {
-    text-decoration: none;
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 4px;
 }
 
 nav a:visited {
@@ -22,6 +27,20 @@ nav a:hover {
     font-weight: bold;
 }
 
+img {
+    border: cadetblue;
+    border: 5px dashed brown;
+    width: 400px;
+    height: 150px;
+}
+section {
+    text-align: center;
+    background-color: green;
+}
 
+header {
+    text-decoration: wavy;
+    background-color: brown;
+}
 
 
