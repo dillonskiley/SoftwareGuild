@@ -1,7 +1,7 @@
 
     DONE - Add Bootstrap to the site.
     - Style the site navigation so that you are using either tabs or pills.
-    - Use a jumbotron or page header to call out big news - your restaurant is opening a new location!
+    DONE - Use a jumbotron or page header to call out big news - your restaurant is opening a new location!
     - Make the site responsive using Bootstrap's grid system.
         - The menu items should stack well, with no overlapping.
         - The front page content should stack as well.
