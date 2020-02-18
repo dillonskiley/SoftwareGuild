@@ -10,18 +10,18 @@ header, footer {
 html {
     background-color: black;
 }
-nav {
+ul {
     border-top: 3px dashed #546a7b;
     border-bottom: 3px dashed #546a7b;
     margin-top: 4px;
 }
 
-nav a:visited {
+ul a:visited {
     color: pink;
     text-decoration: none;
 }
 
-nav a:hover {
+ul a:hover {
     text-decoration: none;
     color: #000000; 
     font-weight: bold;
