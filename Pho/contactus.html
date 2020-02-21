@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!Doctype html>
 <!-- 
     Name: Dillon Kiley
     Date Created: 1/27/20
@@ -63,70 +63,126 @@
             }
 
             #form {
-                background-color: gray;
+                background-color: pink;
             }
 
             #hr {
               color: red;
               height: 5px;
             }
-
-
-            
+            .main-form {
+                width: 450px;
+                margin: auto;
+            }
+            #body {
+                background-color: gray;
+            }
             
         </style>
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
-    <body id="myForm" style="width: 500px; margin: auto;" >
-        <form action="submit.html"method="POST">
-            <label for="Name" required>Name:</label>
-            <input type="text" id="Name" name="Name"> <br />
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"> <br />
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone"> <br />
+    <body id="body">
+        <main>
+            <div class="jumbotron" style="margin-bottom: 0px;">
+            <h1 class="text-left">Pho Sizzles</h1>
+            <h2 class="text-center">Opening A New Location!</h2>
+            <h3 class="text-right">Visit Us</h3>
+            </div>
             
-            <label for="contact">Reason for Inquiry:</label>
-            <select id="contact" name="contact">
-            <option value="default" selected>--Select One--</option>
-            <option value="Catering" selected>Catering</option>
-            <option value="PrivatePart">Private Party</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Other">Other</option>
-            </select><br />
-            <label for="info">Additional Information</label>
-            <textarea id="info" name="info"></textarea><br />
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+                <span class="navbar-text"></span>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a class="navbar-brand" href="main.html"><img src="https://cdn2.iconfinder.com/data/icons/web-iconset-pt-1/100/047_-_homepage-512.png" height="40px"></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="menu.html">Menu</a !important>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <br />
+            
+            <form action="" class="main-form" id="form">
+                <h2 style="text-align: center;">Contact Us</h2><br />
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="FirstName">First Name</label>
+                            <input type="text" name="FirstName" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="LastName">Last Name</label>
+                            <input type="text" name="Last Name" class="form-control">
+                        </div>
+                    </div>
+                </div>
 
-            <legend>Have you been to the restaurant?</legend>
-                <input type="radio" id="choice1" name="questionnaire" value="yes">
-                <label for="choice1">Yes</label><br />
-                <input type="radio" id="choice2" name="questionnaire" value="no">
-                <label for="choice2">No</label><br />
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="password" name="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="Inquiry">Reason for Inquiry</label>
+                    <select name="Inquiry" id="Inquiry" class="form-control">
+                        <option value="Catering">Catering</option>
+                        <option value="PrivateParty">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="info">Additional Information</label>
+                    <textarea name="AddInfo" id="AddInfo" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <legend>Have you been to the restaurant?</legend>
+                    <input type="radio" id="choice1" name="questionnaire" value="yes" class="form-contro>
+                    <label for="choice1>Yes</label><br />
+                    <input type="radio" id="choice2" name="questionnaire" value="no" class="form-contro>
+                    <label for="choice2>No</label>
+                </div>
+                <div class="form-group">
+                    <legend>Best days to contact you?</legend>
+                    <input type="checkbox" id="M" name="interest" value="M">
+                    <label for="M">M</label>
 
+                    <input type="checkbox" id="T" name="interest" value="T">
+                    <label for="T">T</label>
 
+                    <input type="checkbox" id="W" name="interest" value="W">
+                    <label for="W">W</label>
 
+                    <input type="checkbox" id="Th" name="interest" value="Th">
+                    <label for="Th">Th</label>
+
+                    <input type="checkbox" id="F" name="interest" value="F">
+                    <label for="F">F</label><br />
+                </div>
+                <div class="form-check">
+                    <input type="submit" name="submit" value="Send Request">
+                </div>
+            </form>
 
             
-                <legend>Best days to contact you?</legend>
-                <input type="checkbox" id="M" name="interest" value="M">
-                <label for="M">M</label>
-
-                <input type="checkbox" id="T" name="interest" value="T">
-                <label for="T">T</label>
-
-                <input type="checkbox" id="W" name="interest" value="W">
-                <label for="W">W</label>
-
-                <input type="checkbox" id="Th" name="interest" value="Th">
-                <label for="Th">Th</label>
-
-                <input type="checkbox" id="F" name="interest" value="F">
-                <label for="F">F</label><br />
-
-                <input type="submit" name="submit" value="Send Request">  
-        </form>
         
+            </section>
+            
+        </main>
+        <hr />
+        <footer>
+            <p> 2720 Keaton Ave. Denver, Co 80602<br /> 720-123-4123</p>
+        </footer>
     </body>
     
 </html>
