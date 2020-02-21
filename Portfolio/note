@@ -11,5 +11,5 @@
         DONE - We're rolling out our seasonal menu, with special options for this season.
         DONE - The Drink of the Month is SG Special Brew.
     - Use the Bootstrap form items for your Contact Us form, validate in Javascript that data has been provided and give a message that the information is valid without submitting it anywhere.
-    - Make sure that users who have JavaScript disabled know that this site is best viewed with JavaScript enabled.
+    DONE - Make sure that users who have JavaScript disabled know that this site is best viewed with JavaScript enabled.
 
