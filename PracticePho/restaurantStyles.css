@@ -43,6 +43,7 @@ footer {
 
 #body {
     background-color: gray;
+    text-align: center;
 }
 
 #form {
@@ -68,11 +69,18 @@ footer {
     text-align: center;
 }
 
-
 #Drinks {
     text-align: center;
 }
 #bev {
     text-align: center;
     
+}
+
+#row1 {
+    background-color: pink;
+}
+
+#row2 {
+    background-color: lemonchiffon;
 }
