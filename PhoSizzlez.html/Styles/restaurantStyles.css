@@ -1,21 +1,3 @@
-header, footer {
-    background-color: brown;
-    border-bottom: 10px dashed red; 
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    
-}
-
-html {
-    background-color: black;
-}
-ul {
-    border-top: 3px dashed #546a7b;
-    border-bottom: 3px dashed #546a7b;
-    margin-top: 4px;
-}
-
 ul a:visited {
     color: pink;
     text-decoration: none;
@@ -23,24 +5,54 @@ ul a:visited {
 
 ul a:hover {
     text-decoration: none;
-    color: #000000; 
+    color: green; 
     font-weight: bold;
 }
 
-img {
-    border: cadetblue;
-    border: 5px dashed brown;
-    width: 400px;
-    height: 150px;
-}
-section {
-    text-align: center;
-    background-color: green;
+.jumbotron {
+    height: 250px;
+    background-color: rgb(80, 78, 78) !important;
 }
 
-header {
-    text-decoration: wavy;
-    background-color: brown;
+.jumbotron h1 {
+    color: #fff;
+    font-size: 60px;
 }
+
+.jumbotron h2 {
+    color: green;
+    font-size: 50px;
+}
+
+.jumbotron h3 {
+    color: pink;
+    font-size: 20px;
+}
+
+#Content {
+    background-color: grey;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#body {
+    background-color: gray;
+}
+
+#hr {
+  color: red;
+  height: 5px;
+}
+#Car {
+    text-align: center;
+}
+
+
 
 
