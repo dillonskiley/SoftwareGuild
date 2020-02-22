@@ -1,36 +1,78 @@
+ul a:visited {
+    color: pink;
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: none;
+    color: green; 
+    font-weight: bold;
+}
+
 .jumbotron {
     height: 250px;
-    background-color: darkgray !important;
+    background-color: rgb(80, 78, 78) !important;
 }
+
 .jumbotron h1 {
     color: #fff;
     font-size: 60px;
 }
+
 .jumbotron h2 {
     color: green;
     font-size: 50px;
-    }
+}
+
 .jumbotron h3 {
-    color: black;
+    color: pink;
     font-size: 20px;
 }
+
 #Content {
     background-color: grey;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 footer {
-    
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
+
 #body {
     background-color: gray;
-    
+}
+
+#form {
+    background-color: pink;
 }
 
 #hr {
-    color: red;
-    height: 5px;
+  color: red;
+  height: 5px;
+}
+#Car {
+    text-align: center;
+}
+
+.main-form {
+    width: 450px;
+    margin: auto;
+}
+#dranks {
+    text-align: center;
+}
+#menu {
+    text-align: center;
+}
+
+
+#Drinks {
+    text-align: center;
+}
+#bev {
+    text-align: center;
+    
 }
