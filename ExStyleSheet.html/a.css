@@ -45,6 +45,10 @@ footer {
     background-color: gray;
 }
 
+#form {
+    background-color: pink;
+}
+
 #hr {
   color: red;
   height: 5px;
@@ -53,6 +57,22 @@ footer {
     text-align: center;
 }
 
+.main-form {
+    width: 450px;
+    margin: auto;
+}
+#dranks {
+    text-align: center;
+}
+#menu {
+    text-align: center;
+}
 
 
-
+#Drinks {
+    text-align: center;
+}
+#bev {
+    text-align: center;
+    
+}
