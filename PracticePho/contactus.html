@@ -46,7 +46,7 @@
             
             <form action="" class="main-form" id="form" needs-validation >
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="FirstName"><b>First Name:</b></label>
                             <input type="text" name="FirstName" class="form-control" required>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="LastName"><b>Last Name:</b></label>
                             <input type="text" name="Last Name" class="form-control" required>
@@ -62,15 +62,15 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" class="col-md-4">
                     <label for="email"><b>Email:</b></label>
                     <input type="password" name="password" class="form-control" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group" class="col-me-4">
                     <label for="phone"><b>Phone Number:</b></label>
                     <input type="text" name="phone" class="form-control" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group" class="col-md-4">
                     <label for="Inquiry"><b>Reason for Inquiry:</b></label>
                     <select name="Inquiry" id="Inquiry" class="form-control" required>
                         <option value="Catering">Catering</option>
@@ -79,18 +79,18 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group" class="col-md-4">
                     <label for="info"><b>Additional Information:</b></label>
                     <textarea name="AddInfo" id="AddInfo" class="form-control" required></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group" class="col-md-4">
                     <legend><b>Have you been to the restaurant?</b></legend>
                     <input type="radio" id="choice1" name="questionnaire" value="yes"  required>
                     <label for= "choice1">Yes</label><br />
                     <input type="radio" id="choice2" name="questionnaire" value="no" required>
                     <label for= "choice2">No</label>
                 </div>
-                <div class="form-group" required>
+                <div class="form-group" class="col-md-4" required>
                     <legend><b>Best days to contact you?</b></legend>
                     <input type="checkbox" id="M" name="interest" value="M" >
                     <label for="M">M</label>
@@ -107,7 +107,7 @@
                     <input type="checkbox" id="F" name="interest" value="F" >
                     <label for="F">F</label><br />
                 </div>
-                <div class="form-check">
+                <div class="form-check" class="col-md-4">
                     <input type="submit" name="submit" value="Send Request">
                 </div>
             </form>
